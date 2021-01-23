@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
 :root {
   --primary-color: #5fbaa7;
 }
@@ -7,7 +11,14 @@
 }
 
 body {
-  background-color: #f4f4f4;
+  /* background-image: url(img/background_img.jpg);
+  background-color: #f4f4f4; */
+  background: rgb(88, 103, 171);
+  background: linear-gradient(
+    38deg,
+    rgba(88, 103, 171, 1) 35%,
+    rgba(232, 70, 70, 0.938813025210084) 73%
+  );
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
@@ -18,25 +29,48 @@ body {
   padding: 20px;
 }
 
+.container {
+  background-color: white;
+  padding: 20px 40px 20px 40px;
+  border-radius: 10%;
+}
+
 h1 {
-  color: var(--primary-color);
+  color: black;
+  text-align: center;
+  font-family: "Staatliches", cursive;
 }
 
 p {
   text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: 20px;
 }
 
 .btn {
   color: #fff;
-  background: var(--primary-color);
+  background: #993366;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 15px;
   padding: 5px 12px;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-family: "Fredoka One", cursive;
 }
 
 .money-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 150px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .currency {
@@ -56,6 +90,9 @@ p {
   background-position: right 10px top 50%, 0, 0;
   background-size: 12px auto, 100%;
   background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 100px;
+  text-align: center;
 }
 
 .currency input {
@@ -72,9 +109,22 @@ p {
 }
 
 .rate {
-  color: var(--primary-color);
+  color: #660033;
   font-size: 14px;
   padding: 0 10px;
+  font-family: "Fredoka One", cursive;
+}
+
+#amount-one,
+#amount-two {
+  color: black;
+  font-family: "Fredoka One", cursive;
+}
+
+#currency-one,
+#currency-two {
+  color: black;
+  font-family: "Fredoka One", cursive;
 }
 
 select:focus,
@@ -85,6 +135,6 @@ button:focus {
 
 @media (max-width: 600px) {
   .currency input {
-    width: 200px  ;
+    width: 200px;
   }
 }
