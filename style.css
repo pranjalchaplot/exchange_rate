@@ -43,10 +43,16 @@ h1 {
   font-family: "Staatliches", cursive;
 }
 
-p {
+#subtitle {
   text-align: center;
   font-family: "DM Serif Display", serif;
   font-size: 20px;
+}
+
+#endquote {
+  text-align: center;
+  font-family: "Staatliches", cursive;
+  font-size: 15px;
 }
 
 .btn {
